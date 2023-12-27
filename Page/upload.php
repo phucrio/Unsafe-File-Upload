@@ -15,7 +15,6 @@
     </form>
 
     <?php
-    // Lỗ hổng Unsafe File Upload chỉ để mô phỏng
     if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['uploaded_file'])) {
         $target_dir = "./uploads/";
         $target_file = $target_dir . basename($_FILES["uploaded_file"]["name"]);
@@ -31,8 +30,7 @@
             echo "Sorry, your file is too large.";
             $uploadOk = 0;
         }
-
-
+        
         if ($uploadOk == 0) {
             echo "Sorry, your file was not uploaded.";
         } else {
