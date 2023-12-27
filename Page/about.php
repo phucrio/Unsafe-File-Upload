@@ -11,6 +11,6 @@
 </head>
 <body>
     <h1>About Us</h1>
-    <p>This is a simple website. We care about security!</p>
+    <p style="text-align: center;">This is a simple website. We care about security!</p>
 </body>
 </html>
